@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔐 Advanced Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔐 Password Strength Checker</h1>
+
+  <div class="container">
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter your password"
+      oninput="checkPassword()"
+    />
+    <button id="toggle" onclick="togglePassword()">👁️ Show</button>
+
+    <div id="strength-bar">
+      <div id="bar"></div>
+    </div>
+
+    <div id="feedback">Type a password to check strength</div>
+
+    <br />
+
+    <button onclick="generatePassword()">🔄 Generate Strong Password</button>
+    <button onclick="copyPassword()">📋 Copy</button>
+  </div>
+
+ 
+ <footer class="credits">
+        <p>© 2025 Password Strength Checker | Built by <strong>Shaikh Sameen Raiyan</strong></p>
+        <p>
+          <a href="https://www.linkedin.com/in/shaikh-raiyan-154863359" target="_blank">LinkedIn</a> |
+          Email <a href="shaikhraiyan780@gmail.com">shaikhraiyan780@gmail.com</a> |<br>
+           
+        </p>
+      </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
